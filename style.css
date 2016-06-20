@@ -4,57 +4,116 @@
 }
 
 header {
-  background-color: orange;
+  background-color: #f5672b;
   display: flex;
-  height: 2rem;
-
+  height: 2.2rem;
+  position: relative;
 }
 
 .free-shipping {
-  margin: 1rem;
+  margin: .3rem .5rem .5rem 5rem;
+  background-color: #a43239;
+  color: white;
+  width: 7rem;
+  height: 1.5rem;
+  border: 1px #f5672b solid;
+  border-radius: 8%;
+  font-size: .75rem;
+  opacity: .8;
+  display: inline;
+  position: absolute;
+  left: 5%;
+}
+
+.page-top {
+  padding: .5rem;
 }
 
 .top-of-page {
   display: inline;
   list-style-type: none;
-  margin: 1rem;
-  text-align: center;
+  margin: 2rem .5rem;
+  color: white;
+  font-family: Verdana;
+  font-size: .85rem;
 
 }
 
 nav {
   background-color: yellow;
   display: flex;
-  padding: 2rem;
+
 
 }
+
+.logo {
+  transform: scale(.5);
+  position: relative;
+}
+
+.tie-select{
+  display: flex;
+  max-height: inherit;
+}
 .nav-bar {
-  display: inline;
+  display: inline-flex;
+  flex-direction: ;
   list-style-type: none;
   margin: .5rem;
   text-align: center;
   font-size: 1.4rem;
-  flex-flow: column;
-  justify-content: center;
 
+}
+
+.top-right {
+  display: flex;
+}
+
+.login {
+  font-size: .7rem;
+  text-decoration: none;
+  margin: .3rem;
+  display: flex;
+  align-items: flex-start
 }
 
 .cart {
-
+  display: flex;
+  margin: .2rem;
 }
 
 .search-bar {
+  display: flex;
+  margin: .2rem;
+}
+
+.ties {
+  display: flex;
+  /*flex: initial;*/
+  width: 100%;
+  height: 20rem;
+  border: 1px solid black;
+  position: relative;
+
 
 }
 
 .tie-pics {
+  /*transform: scale(.6);*/
   display: flex;
-  flex: initial;
-  width: 100%;
-  height: 20rem;
-  background-color: yellow;
-  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+  top: 0%;
+  position: absolute;
+  transform: translate(3%, 0%);
+  min-width: 10rem;
 
+}
+
+.tie-types {
+  display: flex;
+  position: sticky;
+  top: 100%;
 }
 
 .tiles {
@@ -159,8 +218,8 @@ footer {
 .bottom--nav {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  width: 7.1rem;
+  min-width: 10rem;
+  margin-right: 40rem;
 
 }
 
@@ -168,24 +227,25 @@ footer {
   display: flex;
   flex-direction: column;
   height: 8rem;
-  width: 5rem;
+  width: 8rem;
   border: black solid 2px;
-  padding-top: 1rem;
   list-style-type: none;
   justify-content: flex-end;
 }
 
 .shop--li {
   list-style-type: none;
-  margin: .5rem 0;
+  margin: .5rem .5rem .6rem 0;
   justify-content: flex-end;
+  font-size: .8rem;
+  text-align: left;
 }
 
 .about {
   display: flex;
   flex-direction: column;
   height: 8rem;
-  width: 5rem;
+  width: 8rem;
   border: black solid 2px;
   padding-top: 1rem;
   list-style-type: none;
@@ -194,32 +254,37 @@ footer {
 
 .about--us {
   list-style-type: none;
-  margin: .5rem 0;
+  margin: .5rem .5rem .6rem 0;
   justify-content: flex-end;
+  font-size: .8rem;
+  text-align: left;
 }
 
 .style {
   display: flex;
   flex-direction: column;
   height: 8rem;
-  width: 5rem;
+  width: 8rem;
   border: black solid 2px;
   padding-top: 1rem;
   list-style-type: none;
   justify-content: flex-end;
+
 }
 
 .style--guide {
   list-style-type: none;
-  margin: .5rem 0;
+  margin: .5rem .5rem .6rem 0;
   justify-content: flex-end;
+  font-size: .8rem;
+  text-align: left;
 }
 
 .help {
   display: flex;
   flex-direction: column;
   height: 8rem;
-  width: 5rem;
+  width: 8rem;
   border: black solid 2px;
   padding-top: 1rem;
   list-style-type: none;
@@ -228,6 +293,8 @@ footer {
 
 .help--li {
   list-style-type: none;
-  margin: .5rem 0;
+  margin: .5rem .5rem .6rem 0;
   justify-content: flex-end;
+  font-size: .8rem;
+  text-align: left;
 }
