@@ -94,7 +94,10 @@ nav {
   margin: .2rem;
 }
 
-
+.tie-pics {
+  display: flex;
+  text-align: center;
+}
 
 .ties {
   position: relative;
@@ -102,9 +105,9 @@ nav {
 
 }
 
-.tie-pics {
-  display: flex;
-  text-align: center;
+.tie:hover {
+  width: 10%;
+  transition:width 1s ease;
 }
 
 .slogan {
@@ -268,17 +271,14 @@ h3 {
 
 .bottom--nav {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   min-width: 10rem;
+  background: #f4f4f4;
 
-  display: flex;
   width: 100%;
-  border: black solid 2px;
   padding-top: 1rem;
   list-style-type: none;
   text-align: right;
-
-
 }
 .contained {
   display: flex;
@@ -342,16 +342,55 @@ h3 {
 }
 
 .right-box {
+  border: #a2afc0 1px solid;
+  background-color: #a2afc0;
+  padding: 1.2rem;
+  width: 30%;
+  text-align: left;
   display: flex;
   flex-direction: column;
-  border: gray 1 px solid;
-  background-color: gray;
-  padding: 1rem;
-  width: 20%;
 
 }
 
+.right-text {
+  color: #fff;
+  width: 100%;
+  text-align: left;
+}
+.contain-stuff {
+  display: flex;
+  margin: .5rem;
+}
+
+.email_num {
+  width: 90%;
+  color: white;
+  text-align: left;
+
+}
+
+.btn {
+  width: 100%;
+  /*background: blue;*/
+}
+
 .cont-btn {
+  background: #33a1ff;
+  border-radius: 5%;
+  border: #2b89da 1px solid;
+  color: white;
+  padding: .5rem;
+  font-size: 1.3rem;
   display: flex;
 
+
+}
+
+
+
+h6 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 8rem;
+  background: #f4f4f4;
 }
