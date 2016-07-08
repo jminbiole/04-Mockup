@@ -8,7 +8,7 @@ img {
 header {
     background-color: #f5672b;
     display: flex;
-    height: 2.2rem;
+    height: 3rem;
     align-items: center;
 }
 .free-shipping {
@@ -24,7 +24,7 @@ header {
     display: flex;
 }
 .page-top {
-    padding: .5rem;
+    padding: 1rem;
     display: flex;
     margin: 0;
 }
@@ -33,7 +33,7 @@ header {
     margin: 0 .5rem;
     color: white;
     font-family: Verdana;
-    font-size: .85rem;
+    font-size: 1rem;
 }
 nav {
     display: flex;
@@ -48,20 +48,20 @@ nav {
     margin: 0;
 }
 .nav-bar {
-    display: inline-flex;
+    display: flex;
     list-style-type: none;
     margin: .5rem 1.5rem;
     text-align: center;
-    font-size: 1.8rem;
-    font-family: serif;
+    font-size: 2rem;
+    font-family: Arial;
 }
 .nav-right {
-    margin-right: 1rem;
+    margin-right: 8rem;
     width: 20%;
 }
 .top-right {
     text-align: right;
-    margin-right:
+    height: 2rem;
 }
 .bottom-right {
     width: 100%;
@@ -69,8 +69,10 @@ nav {
 .login {
     font-size: 1rem;
     text-decoration: none;
-    margin: .3rem;
+    margin: 1rem .5rem 3rem;
     text-align: right;
+    color: inherit;
+    font-family: Verdana;
 }
 .cart {
     margin: 0 1rem 0 0;
@@ -138,15 +140,15 @@ nav {
 .bow-ties {
     display: flex;
     width: 25%;
-    margin: 2rem .5rem;
+    margin: 2rem 1rem;
     align-items: center;
     position: relative;
-    /*justify-content: space-between;*/
+
 }
 .pocket-squares {
     display: flex;
     width: 25%;
-    margin: 2rem .5rem;
+    margin: 2rem 1rem;
     align-items: center;
     position: relative;
     /*justify-content: space-between;*/
@@ -154,7 +156,7 @@ nav {
 .tie-bars {
     display: flex;
     width: 25%;
-    margin: 2rem .5rem;
+    margin: 2rem 1rem;
     align-items: center;
     position: relative;
     /*justify-content: space-between;*/
@@ -181,11 +183,16 @@ nav {
 .story {
     text-align: center;
     margin: 3rem;
+
 }
-.story--link {
+h1 {
+  margin-bottom: 1rem;
+  font-family: Calibri;
+}
+.story-link {
     text-decoration: none;
     color: blue;
-    margin: 1rem;
+    margin-top: 3rem;
     padding: .5rem;
 }
 .story--link:hover {
@@ -209,11 +216,11 @@ h3 {
     margin: .3rem;
 }
 .wkpick {
-    width: 12rem;
+    width: 18rem;
     margin: 2rem
 }
 .loop {
-    width: 12rem;
+    width: 18rem;
     margin: 2rem;
 }
 .icons {
@@ -223,38 +230,39 @@ h3 {
     float: left;
 }
 .quarter {
-    width: 12rem;
+    width: 18rem;
     margin: 2rem;
 }
 .quarter-search {
-    width: 11rem;
-    height: 1.5rem;
+    width: 15rem;
+    height: 2rem;
     margin: .8rem;
     padding: .2rem;
     font-size: .8rem;
     border: gray 1px solid;
-    opacity: .5;
-    border-radius: 5%;
+    opacity: .3;
+    border-radius: 3%;
     -webkit-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.55);
-    box-shadow: 1px 0px 1px 1px #919191;
+    box-shadow: 0px 0px 0px 2px #decaca;
 }
 .sub {
     margin: .3rem;
     padding: .3rem;
-    border: #205add solid 1px;
+    border: #33a1ff solid 1px;
     border-radius: 10%;
-    background: #205add;
+    background: #33a1ff;
     color: white;
     font-size: .8rem;
 }
 .guide {
-    width: 12rem;
+    width: 18rem;
     font-family: Arial;
     margin: 2rem;
 }
 .knot {
     text-decoration: none;
+    color: #33a1ff;
 }
 .bottom--nav {
     display: flex;
@@ -268,54 +276,69 @@ h3 {
 }
 .contained {
     display: flex;
+    width: 50%;
+    text-align: left;
 }
 .shop {
     list-style-type: none;
+    margin: 0;
+    padding: 0 2rem;
 }
 .shop--head {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .shop--li {
     list-style-type: none;
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: left;
-    padding-left: 0;
+    padding-left 0;
 }
 .about {
     text-align: center;
+    margin: 0;
+    padding: 0 2rem;
 }
 .about--head {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .about--li {
     list-style-type: none;
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: left;
 }
 .style {
     list-style-type: none;
+    margin: 0;
+    padding: 0 2rem;
+    /*width: 100%;*/
 }
 .style--head {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .style--li {
     list-style-type: none;
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: left;
+    padding: 0;
+}
+.help {
+  margin: 0;
+  padding: 0 2rem;
 }
 .help--head {
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 .help--li {
     list-style-type: none;
-    font-size: .8rem;
+    font-size: 1rem;
     text-align: left;
+
 }
 .right-box {
-    border: #a2afc0 1px solid;
+    border: #929ead 1px solid;
     background-color: #a2afc0;
-    padding: 1.2rem;
-    width: 30%;
+    border-radius: 2%;
+    padding: 1rem;
     text-align: left;
     display: flex;
     flex-direction: column;
@@ -324,6 +347,17 @@ h3 {
     color: #fff;
     width: 100%;
     text-align: left;
+    display: flex;
+}
+.here {
+  width: 100%;
+  display: flex;
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: Arial;
+}
+em {
+  margin: 0;
 }
 .contain-stuff {
     display: flex;
@@ -333,23 +367,26 @@ h3 {
     width: 90%;
     color: white;
     text-align: left;
+    margin-right: 2rem;
+    font-size: 1.1rem;
 }
 .btn {
-    width: 100%;
-    /*background: blue;*/
+    width: 90%;
+
 }
 .cont-btn {
     background: #33a1ff;
     border-radius: 5%;
     border: #2b89da 1px solid;
     color: white;
-    padding: .5rem;
+    padding: .7rem;
     font-size: 1.3rem;
     display: flex;
 }
-h6 {
+.rights{
     display: flex;
     flex-direction: row;
     padding-left: 8rem;
     background: #f4f4f4;
+    font-size: 1rem;
 }
