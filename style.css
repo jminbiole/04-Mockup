@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
-    margin: 0 auto;
+}
+body {
+    margin: 0;
+}
+.container {
+    max-width: 75rem;
+    display: flex;
+    margin: auto;
 }
 img {
     max-width: 100%;
@@ -9,10 +16,8 @@ header {
     background-color: #f5672b;
     display: flex;
     height: 3rem;
-    align-items: center;
 }
 .free-shipping {
-    margin: .3rem .5rem .5rem 5rem;
     background-color: #c7532c;
     color: white;
     width: 7rem;
@@ -21,12 +26,9 @@ header {
     border-radius: 8%;
     font-size: .75rem;
     opacity: .8;
-    display: flex;
 }
 .page-top {
-    padding: 1rem;
     display: flex;
-    margin: 0;
 }
 .top-of-page {
     display: flex;
@@ -39,12 +41,9 @@ nav {
     display: flex;
     align-items: center;
 }
-.logo {
-    position: relative;
-    margin: 0 2rem 0 5rem;
-}
 .tie-select {
     display: flex;
+    align-items: center;
     margin: 0;
 }
 .nav-bar {
@@ -56,12 +55,12 @@ nav {
     font-family: Arial;
 }
 .nav-right {
-    margin-right: 8rem;
-    width: 20%;
+    width: 100%;
 }
 .top-right {
     text-align: right;
     height: 2rem;
+    width: 100%;
 }
 .bottom-right {
     width: 100%;
@@ -106,7 +105,7 @@ nav {
     display: flex;
     justify-content: center;
 }
-.container {
+.container-ties {
     width: 100%;
     max-width: 80rem;
     margin: 0;
@@ -138,26 +137,18 @@ nav {
     justify-content: center;
 }
 .bow-ties {
-    display: flex;
-    width: 25%;
+    width: 33%;
     margin: 2rem 1rem;
-    align-items: center;
     position: relative;
-
 }
 .pocket-squares {
-    display: flex;
-    width: 25%;
+    width: 33%;
     margin: 2rem 1rem;
-    align-items: center;
     position: relative;
-    /*justify-content: space-between;*/
 }
 .tie-bars {
-    display: flex;
-    width: 25%;
+    width: 33%;
     margin: 2rem 1rem;
-    align-items: center;
     position: relative;
     /*justify-content: space-between;*/
 }
@@ -183,11 +174,10 @@ nav {
 .story {
     text-align: center;
     margin: 3rem;
-
 }
 h1 {
-  margin-bottom: 1rem;
-  font-family: Calibri;
+    margin-bottom: 1rem;
+    font-family: Calibri;
 }
 .story-link {
     text-decoration: none;
@@ -203,12 +193,8 @@ footer {
     width: 100%;
     display: flex;
     border-top: dotted 2px;
-    position: relative;
 }
-.footer-inner {
-    display: flex;
-    justify-content: center;
-}
+
 h3 {
     margin: .5rem;
 }
@@ -217,7 +203,7 @@ h3 {
 }
 .wkpick {
     width: 18rem;
-    margin: 2rem
+    margin: 2rem;
 }
 .loop {
     width: 18rem;
@@ -227,7 +213,6 @@ h3 {
     display: flex;
     width: 3rem;
     height: 3rem;
-    float: left;
 }
 .quarter {
     width: 18rem;
@@ -236,7 +221,7 @@ h3 {
 .quarter-search {
     width: 15rem;
     height: 2rem;
-    margin: .8rem;
+    margin: .0 1rem;
     padding: .2rem;
     font-size: .8rem;
     border: gray 1px solid;
@@ -266,73 +251,57 @@ h3 {
 }
 .bottom--nav {
     display: flex;
-    justify-content: space-between;
-    min-width: 10rem;
     background: #f4f4f4;
     width: 100%;
     padding-top: 1rem;
-    list-style-type: none;
-    text-align: right;
 }
-.contained {
-    display: flex;
-    width: 50%;
-    text-align: left;
-}
+
 .shop {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
-    padding: 0 2rem;
 }
 .shop--head {
     font-size: 1.1rem;
 }
 .shop--li {
-    list-style-type: none;
+    list-style: none;
     font-size: 1rem;
-    text-align: left;
-    padding-left 0;
 }
 .about {
-    text-align: center;
+    list-style: none;
     margin: 0;
-    padding: 0 2rem;
 }
 .about--head {
     font-size: 1.1rem;
 }
 .about--li {
-    list-style-type: none;
+    list-style: none;
     font-size: 1rem;
     text-align: left;
 }
 .style {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
-    padding: 0 2rem;
-    /*width: 100%;*/
 }
 .style--head {
     font-size: 1.1rem;
 }
 .style--li {
-    list-style-type: none;
+    list-style: none;
     font-size: 1rem;
     text-align: left;
     padding: 0;
 }
 .help {
-  margin: 0;
-  padding: 0 2rem;
+    margin: 0;
 }
 .help--head {
     font-size: 1.1rem;
 }
 .help--li {
-    list-style-type: none;
+    list-style: none;
     font-size: 1rem;
     text-align: left;
-
 }
 .right-box {
     border: #929ead 1px solid;
@@ -350,29 +319,27 @@ h3 {
     display: flex;
 }
 .here {
-  width: 100%;
-  display: flex;
-  margin: 0;
-  font-size: 1.6rem;
-  font-family: Arial;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    font-size: 1.6rem;
+    font-family: Arial;
 }
 em {
-  margin: 0;
+    margin: 0;
 }
 .contain-stuff {
     display: flex;
     margin: .5rem;
 }
 .email_num {
-    width: 90%;
     color: white;
     text-align: left;
     margin-right: 2rem;
     font-size: 1.1rem;
 }
 .btn {
-    width: 90%;
-
+  width: 100%;
 }
 .cont-btn {
     background: #33a1ff;
@@ -383,7 +350,7 @@ em {
     font-size: 1.3rem;
     display: flex;
 }
-.rights{
+.rights {
     display: flex;
     flex-direction: row;
     padding-left: 8rem;
