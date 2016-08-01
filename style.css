@@ -5,7 +5,9 @@ body {
     margin: 0;
 }
 .container {
+    width: 100%;
     max-width: 75rem;
+    min-width: 30rem;
     display: flex;
     margin: auto;
 }
@@ -17,6 +19,7 @@ header {
     display: flex;
     height: 3rem;
 }
+
 .free-shipping {
     background-color: #c7532c;
     color: white;
@@ -29,6 +32,7 @@ header {
 }
 .page-top {
     display: flex;
+    padding: 0;
 }
 .top-of-page {
     display: flex;
@@ -37,25 +41,31 @@ header {
     font-family: Verdana;
     font-size: 1rem;
 }
-nav {
+.top {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 .tie-select {
     display: flex;
     align-items: center;
     margin: 0;
+    padding: 0;
+    width: 100%;
 }
 .nav-bar {
     display: flex;
-    list-style-type: none;
-    margin: .5rem 1.5rem;
+    list-style: none;
+    margin: .5rem 1rem;
     text-align: center;
     font-size: 2rem;
     font-family: Arial;
 }
+
 .nav-right {
-    width: 100%;
+    width: 50%;
+    align-items: center;
+    padding-top: 1rem;
 }
 .top-right {
     text-align: right;
@@ -64,11 +74,13 @@ nav {
 }
 .bottom-right {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 .login {
     font-size: 1rem;
     text-decoration: none;
-    margin: 1rem .5rem 3rem;
+    margin: 1rem 0 0 1rem;
     text-align: right;
     color: inherit;
     font-family: Verdana;
@@ -76,10 +88,10 @@ nav {
 .cart {
     margin: 0 1rem 0 0;
     padding: .5rem;
-    width: 35%;
-    height: 2.8rem;
+    width: 25%;
+    height: 2.5rem;
     background: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #666;
     text-align: center;
     border: 2px solid #bbb;
@@ -87,28 +99,27 @@ nav {
 }
 .search-bar {
     margin: .2rem;
-    width: 55%;
+    width: 50%;
     margin: 0;
-    height: 2.3rem;
+    height: 2.5rem;
     font-size: 1rem;
     text-align: left;
     color: #666;
     background: white;
     border: 2px solid #bbb;
-    -webkit-box-shadow: 0px 0px 5px 5px rgba(240, 235, 231, 1);
-    -moz-box-shadow: 0px 0px 5px 5px rgba(240, 235, 231, 1);
-    box-shadow: 0px 0px 5px 5px rgba(240, 235, 231, 1);
+    -webkit-box-shadow: 0px 0px 5px 4px rgba(240, 235, 231, 1);
+    -moz-box-shadow: 0px 0px 5px 4px rgba(240, 235, 231, 1);
+    box-shadow: 0px 0px 5px 4px rgba(240, 235, 231, 1);
 }
 .ties {
-    position: relative;
     background-color: #f4f4f4;
     display: flex;
     justify-content: center;
 }
 .container-ties {
     width: 100%;
-    max-width: 80rem;
-    margin: 0;
+    max-width: 75rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,12 +127,12 @@ nav {
 }
 .tie-pics {
     display: flex;
+    justify-content: space-between;
     text-align: center;
     width: 100%;
-    margin: 0 0;
+    margin: auto;
 }
 .tie {
-    margin: 0 1.1rem;
 }
 .tie:hover {
     transform: scale(1.3);
@@ -132,25 +143,25 @@ nav {
     text-align: center;
 }
 .tiles {
-    flex-direction: row;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .bow-ties {
-    width: 33%;
-    margin: 2rem 1rem;
+    width: calc(100% / 3);
+    margin: 2rem 1rem 2rem 0;
     position: relative;
 }
 .pocket-squares {
-    width: 33%;
+  width: calc(100% / 3);
     margin: 2rem 1rem;
     position: relative;
 }
 .tie-bars {
-    width: 33%;
-    margin: 2rem 1rem;
+  width: calc(100% / 3);
+    margin: 2rem 0 2rem 1rem;
     position: relative;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
 }
 .tiles-p1 {
     position: absolute;
@@ -177,7 +188,6 @@ nav {
 }
 h1 {
     margin-bottom: 1rem;
-    font-family: Calibri;
 }
 .story-link {
     text-decoration: none;
@@ -203,11 +213,11 @@ h3 {
 }
 .wkpick {
     width: 18rem;
-    margin: 2rem;
+    margin: 2rem 1rem 2rem 0;
 }
 .loop {
     width: 18rem;
-    margin: 2rem;
+    margin: 2rem 1rem;
 }
 .icons {
     display: flex;
@@ -216,7 +226,7 @@ h3 {
 }
 .quarter {
     width: 18rem;
-    margin: 2rem;
+    margin: 2rem 1rem;
 }
 .quarter-search {
     width: 15rem;
@@ -243,7 +253,7 @@ h3 {
 .guide {
     width: 18rem;
     font-family: Arial;
-    margin: 2rem;
+    margin: 2rem 0 2rem 1rem;
 }
 .knot {
     text-decoration: none;
@@ -256,35 +266,54 @@ h3 {
     padding-top: 1rem;
 }
 
+.btm-container {
+  width: 100%;
+  max-width: 75rem;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.directory {
+  display: flex;
+}
+
+
 .shop {
     list-style: none;
-    margin: 0;
+    margin: 0 .5rem 0 0;
 }
 .shop--head {
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 .shop--li {
     list-style: none;
     font-size: 1rem;
+    padding: 0;
 }
 .about {
     list-style: none;
-    margin: 0;
+    margin: 0 .5rem;
+
 }
 .about--head {
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 .about--li {
     list-style: none;
     font-size: 1rem;
     text-align: left;
+    padding: 0;
 }
 .style {
     list-style: none;
-    margin: 0;
+    margin: 0 .5rem;
 }
 .style--head {
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 .style--li {
     list-style: none;
@@ -293,15 +322,18 @@ h3 {
     padding: 0;
 }
 .help {
-    margin: 0;
+  list-style: none;
+  margin: 0 .5rem;
 }
 .help--head {
     font-size: 1.1rem;
+    margin-bottom: 0;
 }
 .help--li {
     list-style: none;
     font-size: 1rem;
     text-align: left;
+    padding: 0;
 }
 .right-box {
     border: #929ead 1px solid;
@@ -313,7 +345,6 @@ h3 {
     flex-direction: column;
 }
 .right-text {
-    color: #fff;
     width: 100%;
     text-align: left;
     display: flex;
@@ -322,15 +353,21 @@ h3 {
     width: 100%;
     display: flex;
     margin: 0;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     font-family: Arial;
+    color: #e7e7e7;
 }
-em {
+.email {
     margin: 0;
+    color: #e7e7e7;
+}
+.pnum {
+  margin: 0;
+  color: #e7e7e7;
 }
 .contain-stuff {
     display: flex;
-    margin: .5rem;
+    margin: 2rem .5rem 0;
 }
 .email_num {
     color: white;
@@ -350,10 +387,14 @@ em {
     font-size: 1.3rem;
     display: flex;
 }
+.copyright {
+  background: #f4f4f4;
+  width: 100%;
+
+}
 .rights {
     display: flex;
-    flex-direction: row;
-    padding-left: 8rem;
     background: #f4f4f4;
     font-size: 1rem;
+    margin: 0;
 }
